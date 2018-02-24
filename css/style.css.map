@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss",
+		"../sass/variables/_variables.scss",
+		"../sass/variables/_fonts.scss",
+		"../sass/sections/_nav.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
