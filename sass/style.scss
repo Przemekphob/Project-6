@@ -1,3 +1,82 @@
 @import '../sass/variables/variables';
 
-@import '../sass/sections/nav';
+@import '../sass/globals/globals';
+
+.navi {
+	background-color: $black;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20px;
+		.logo {
+			flex: 2;
+
+		}
+		.menu {
+			flex: 10;
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			justify-content: space-between;
+			text-transform: uppercase;
+			list-style: none;
+
+			li {
+				position: relative;
+				a {
+					color: $white;
+					font-weight: $bold;
+					&:hover {
+						&:before {
+						  	content: "";
+						  	position: absolute;
+						 	width: 100%;
+						  	bottom: -175%;
+						  	justify-content: center;
+						  	border: 3px solid $twine;
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+.jumbotron {
+	background-image: url('../images/jumbo.png');
+	height: 100vh;
+	background-size: cover;
+	.header {
+		padding: 300px 0 250px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		color: $white;
+		h1 {
+			padding: 5px 150px;
+			color: $twine;
+			font-weight: $bold;
+			&:first-line {
+				color: $white;
+			}
+		}
+		h2 {
+			padding: 15px;
+			font-weight: $semibold;
+		}
+
+	}
+}
