@@ -6,11 +6,19 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-h1 { font-size: 72px; text-transform: uppercase; }
+h1 { font-size: 72px; }
 
-h2 { font-size: 30px; text-transform: uppercase; }
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px; }
+
+h4 { font-size: 18px; }
+
+h1, h2, h3, h4 { text-transform: uppercase; padding: 10px; }
 
 .corebtn { color: #FFF; background-color: #b88b58; text-transform: uppercase; padding: 20px 50px; border-radius: 30px; border: none; margin: 25px; font-weight: 700; }
+
+.corebtn:hover { background-color: #000; }
 
 .navi { background-color: #000; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; position: fixed; left: 0; right: 0; top: 0; width: 100%; z-index: 999; }
 
@@ -35,3 +43,19 @@ h2 { font-size: 30px; text-transform: uppercase; }
 .jumbotron .header h1:first-line { color: #FFF; }
 
 .jumbotron .header h2 { padding: 15px; font-weight: 600; }
+
+.aboutus { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-align: center; -ms-flex-direction: column; flex-direction: column; }
+
+.aboutus__headtittle h2, .aboutus__headtittle h4 { font-weight: 600; }
+
+.aboutus__headtittle h4 { color: #aeaeae; }
+
+.aboutus__content { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; padding: 50px 0 90px 0; }
+
+.aboutus__content .left-side { text-align: left; -ms-flex: 1.3; flex: 1.3; }
+
+.aboutus__content .left-side p { padding: 20px; }
+
+.aboutus__content .right-side { -ms-flex: 1; flex: 1; }
+
+.aboutus__content .right-side .modal-content iframe { margin: 0 auto; display: block; }

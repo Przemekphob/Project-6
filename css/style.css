@@ -17,12 +17,23 @@ a:active {
 
 h1 {
   font-size: 72px;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .corebtn {
@@ -34,6 +45,10 @@ h2 {
   border: none;
   margin: 25px;
   font-weight: 700;
+}
+
+.corebtn:hover {
+  background-color: #000;
 }
 
 .navi {
@@ -116,6 +131,48 @@ h2 {
 .jumbotron .header h2 {
   padding: 15px;
   font-weight: 600;
+}
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.aboutus__headtittle h2, .aboutus__headtittle h4 {
+  font-weight: 600;
+}
+
+.aboutus__headtittle h4 {
+  color: #aeaeae;
+}
+
+.aboutus__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 90px 0;
+}
+
+.aboutus__content .left-side {
+  text-align: left;
+  flex: 1.3;
+}
+
+.aboutus__content .left-side p {
+  padding: 20px;
+}
+
+.aboutus__content .right-side {
+  flex: 1;
+}
+
+.aboutus__content .right-side .modal-content iframe {
+  margin: 0 auto;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
