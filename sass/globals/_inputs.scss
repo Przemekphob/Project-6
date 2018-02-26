@@ -1,0 +1,10 @@
+.inputsgrey {
+	border: none;
+	border-bottom: 3px solid $lightgrey;
+	background-color: $lowgrey;
+	padding: 15px 0;
+
+	&:focus {
+	border-bottom: 3px solid $grey;		
+	}
+}

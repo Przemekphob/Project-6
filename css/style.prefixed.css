@@ -28,6 +28,10 @@ p { font-weight: 400; }
 
 .lowgreybg { background-color: #ededed; }
 
+.inputsgrey { border: none; border-bottom: 3px solid #aeaeae; background-color: #ededed; padding: 15px 0; }
+
+.inputsgrey:focus { border-bottom: 3px solid #373737; }
+
 .navi { background-color: #000; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; position: fixed; left: 0; right: 0; top: 0; width: 100%; z-index: 999; }
 
 .navi__wrapper { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; padding: 20px; }
@@ -203,3 +207,37 @@ p { font-weight: 400; }
 .facts__numbers .num-item h3 { color: #FFF; }
 
 .facts__numbers .num-item p { color: #aeaeae; }
+
+.share { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-align: center; align-items: center; text-align: center; -ms-flex-direction: row; flex-direction: row; padding: 20px 50px; }
+
+.share__tellmore { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-direction: row; flex-direction: row; }
+
+.share__tellmore h4 { color: #aeaeae; }
+
+.share__icons .fa-twitter, .share__icons .fa-linkedin-in, .share__icons .fa-facebook-f, .share__icons .fa-google-plus-g, .share__icons .fa-pinterest-p { color: #FFF; margin: 5px; border-radius: 50%; padding: 10px; width: 40px; height: 40px; }
+
+.share__icons .fa-twitter:hover, .share__icons .fa-linkedin-in:hover, .share__icons .fa-facebook-f:hover, .share__icons .fa-google-plus-g:hover, .share__icons .fa-pinterest-p:hover { background-color: #000; }
+
+.share__icons .fa-twitter { background-color: #34c5f0; }
+
+.share__icons .fa-linkedin-in { background-color: #127cb4; }
+
+.share__icons .fa-facebook-f { background-color: #336297; }
+
+.share__icons .fa-google-plus-g { background-color: #e74237; }
+
+.share__icons .fa-pinterest-p { background-color: #b71c29; }
+
+.lowgreybg { border-top: 1px solid #aeaeae; }
+
+.lowgreybg .contactus { padding: 60px 300px 80px 300px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: column; flex-direction: column; text-align: center; }
+
+.lowgreybg .contactus__headtittle h4 { color: #aeaeae; }
+
+.lowgreybg .contactus__form { padding: 80px 0 20px 0; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; }
+
+.lowgreybg .contactus__form .double-form { display: -ms-flexbox; display: flex; }
+
+.lowgreybg .contactus__form .double-form .inputsgrey { -ms-flex: 1; flex: 1; margin: 15px; }
+
+.lowgreybg .contactus__form .inputsgrey { margin: 15px 15px 40px 15px; }

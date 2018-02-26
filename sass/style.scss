@@ -554,3 +554,87 @@
 		}
 	}
 }
+
+
+.share {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-direction: row;
+	padding: 20px 50px;
+	
+	&__tellmore {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		h4 {
+			color: $lightgrey;
+		}
+
+	}
+
+	&__icons {
+		.fa-twitter, .fa-linkedin-in, .fa-facebook-f, .fa-google-plus-g, .fa-pinterest-p {
+			color: $white;
+			margin: 5px;
+			border-radius: 50%;
+			padding: 10px;
+			width: 40px;
+			height: 40px;
+
+			&:hover {
+				background-color: $black;
+			}
+		}
+		.fa-twitter {
+			background-color: $twitter;
+		}
+		.fa-linkedin-in {
+			background-color: $linkedin;
+		}
+		 .fa-facebook-f {
+			background-color: $facebook;
+		}
+		.fa-google-plus-g {
+			background-color: $googleplus;
+		}
+		.fa-pinterest-p {
+			background-color: $pintrest;
+		}		
+	}
+}
+
+.lowgreybg {
+	border-top: 1px solid $lightgrey;
+	.contactus {
+		padding: 60px 300px 80px 300px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+		&__headtittle {
+			h4 {
+				color: $lightgrey;
+			}
+		}
+		&__form {
+			padding: 80px 0 20px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.double-form {
+				display: flex;
+				.inputsgrey {
+					flex: 1;
+					margin: 15px;
+				}
+			}
+			.inputsgrey {
+				margin: 15px 15px 40px 15px;		
+			}
+		}
+	}
+}
+
