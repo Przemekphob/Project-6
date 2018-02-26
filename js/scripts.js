@@ -16,13 +16,19 @@ var $btns = $('.button').click(function() {
     
     if (this.id === 'all') {
 
-        $('#parent > div').fadeIn(450);
+        $('#parent > .element-item').fadeIn(450);
         
         
     } else {
         var $el = $('.' + this.id).fadeIn(450);
-        $('#parent > div').not($el).hide();
+        $('#parent > .element-item').not($el).hide();
     }   
     $btns.removeClass('active');
     $(this).addClass('active');
-})
+});
+
+$(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    });
+});
