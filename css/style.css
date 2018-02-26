@@ -67,7 +67,6 @@ p {
 
 .lowgreybg {
   background-color: #ededed;
-  width: 100%;
 }
 
 .navi {
@@ -262,7 +261,6 @@ p {
 
 .ourprojects__gallery .gallery-wrapper .element-item {
   margin: 15px;
-  flex: 1;
   position: relative;
 }
 
@@ -270,6 +268,8 @@ p {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   visibility: hidden;
   display: flex;
   align-items: center;
@@ -280,9 +280,11 @@ p {
 .ourprojects__gallery .gallery-wrapper .element-item a .imglayer h4 {
   font-size: 18px;
   color: #FFF;
+  padding: 5px;
 }
 
 .ourprojects__gallery .gallery-wrapper .element-item a .imglayer p {
+  padding: 5px;
   color: #aeaeae;
 }
 
@@ -566,6 +568,58 @@ p {
   position: absolute;
   left: -7%;
   top: 7%;
+}
+
+.facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+.facts__headtittle h2 {
+  color: #FFF;
+}
+
+.facts__headtittle h4 {
+  color: #aeaeae;
+}
+
+.facts__numbers {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.facts__numbers .num-item {
+  flex: 1;
+  padding: 40px;
+}
+
+.facts__numbers .num-item h2 {
+  font-weight: 700;
+  color: #b88b58;
+  font-size: 40px;
+  position: relative;
+}
+
+.facts__numbers .num-item h2:after {
+  content: "";
+  border-bottom: 5px solid #373737;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 30px;
+}
+
+.facts__numbers .num-item h3 {
+  color: #FFF;
+}
+
+.facts__numbers .num-item p {
+  color: #aeaeae;
 }
 
 /*# sourceMappingURL=style.css.map */

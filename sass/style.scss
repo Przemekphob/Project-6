@@ -186,7 +186,7 @@
 
 			.element-item {
 				margin: 15px;
-				flex: 1;
+
 				position: relative;
 				a {
 					
@@ -194,6 +194,8 @@
 					  	position: absolute;
 						top: 0;
 						bottom: 0;
+						left: 0;
+						right: 0;
 						visibility: hidden;
 						display: flex;
 						align-items: center;
@@ -204,8 +206,10 @@
 					  	h4 {
 							font-size: $fontl;
 							color: $white;
+							padding: 5px;
 					  	}
 					  	p {  
+					  		padding: 5px;
 					  		color: $lightgrey;
 
 					  	}
@@ -497,6 +501,55 @@
 					left: -7%;
 					top: 7%;
 				}
+			}
+		}
+	}
+}
+
+
+.facts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 50px;
+	&__headtittle {
+		h2 {
+			color: $white;
+		}
+		h4 {
+			color: $lightgrey;
+		}
+	}
+
+	&__numbers {
+		display: flex;
+		text-align: center;
+		flex-wrap: wrap;
+		.num-item {
+			flex: 1;
+			padding: 40px;
+			h2 {
+				font-weight: $bold;
+				color: $twine;
+				font-size: 40px;
+				position: relative;
+				&:after {
+					content: "";
+					border-bottom: 5px solid $grey;
+					position: absolute; 
+					bottom: 0;
+					left: 45%;
+					width: 30px;
+				}
+			}
+			h3 {
+				color: $white;
+			}
+			p {
+
+				color: $lightgrey;
 			}
 		}
 	}
