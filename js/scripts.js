@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#vid").attr('src', '');
     
     $("#myModal").on('shown.bs.modal', function(){
-        $("#vid").attr('src', url);
+        $("#vid").attr('src', url + '?autoplay=1');
     });
     
     $("#myModal").on('hide.bs.modal', function(){
@@ -12,3 +12,17 @@ $(document).ready(function(){
     });
 });
 
+var $btns = $('.button').click(function() {
+    
+    if (this.id === 'all') {
+
+        $('#parent > div').fadeIn(450);
+        
+        
+    } else {
+        var $el = $('.' + this.id).fadeIn(450);
+        $('#parent > div').not($el).hide();
+    }   
+    $btns.removeClass('active');
+    $(this).addClass('active');
+})

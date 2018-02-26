@@ -1,5 +1,6 @@
 h1 {
 	font-size: $fontxxxl;
+	font-weight: $bold;
 }
 
 h2 {
@@ -11,10 +12,18 @@ h3 {
 }
 
 h4 {
-	font-size: $fontl;
+	font-size: $fontm;
 }
 
 h1, h2, h3, h4 {
 	text-transform: uppercase;
 	padding: 10px;	
+}
+
+h2, h3, h4 {
+	font-weight: $semibold;
+}
+
+p {
+	font-weight: $regular;
 }
