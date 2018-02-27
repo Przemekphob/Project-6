@@ -241,3 +241,19 @@ p { font-weight: 400; }
 .lowgreybg .contactus__form .double-form .inputsgrey { -ms-flex: 1; flex: 1; margin: 15px; }
 
 .lowgreybg .contactus__form .inputsgrey { margin: 15px 15px 40px 15px; }
+
+.map { position: relative; }
+
+.map iframe { border: none; }
+
+.map .mapinfo { background-color: #FFF; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; position: absolute; top: 50px; left: 20%; padding: 30px 80px 30px 30px; }
+
+.map .mapinfo__item { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; padding: 15px; }
+
+.map .mapinfo__item img { padding-right: 5px; }
+
+.map .goup { position: absolute; bottom: -25px; left: 10%; border: none; border-radius: 50%; width: 60px; height: 60px; }
+
+.map .goup:hover { background-color: #b88b58; }
+
+.map .goup .fa-chevron-up { font-size: 35px; }

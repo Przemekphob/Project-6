@@ -10,6 +10,17 @@ $(document).ready(function(){
     $("#myModal").on('hide.bs.modal', function(){
         $("#vid").attr('src', '');
     });
+
+    $(".goup").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({ 
+            scrollTop: $( $(this).attr('href') ).offset().top 
+        }, 600);
+
+    });
+
 });
 
 var $btns = $('.button').click(function() {
@@ -27,8 +38,10 @@ var $btns = $('.button').click(function() {
     $(this).addClass('active');
 });
 
+
 $(function(){
     $('.carousel').carousel({
       interval: 2000
     });
 });
+

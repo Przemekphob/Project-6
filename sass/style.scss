@@ -638,3 +638,48 @@
 	}
 }
 
+.map {
+	position: relative;
+	iframe {
+		border: none;
+	}
+	.mapinfo {
+		background-color: $white;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 50px;
+		left: 20%;
+		padding: 30px 80px 30px 30px;
+		&__item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 15px;
+			img {
+				padding-right: 5px;
+			}
+
+
+		}
+	}
+	.goup {
+		position: absolute;
+		bottom: -25px;
+		left: 10%;
+		border: none;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+
+		&:hover {
+			background-color: $twine;
+		}
+
+		.fa-chevron-up {
+			font-size: 35px;
+		}
+	}
+	
+}
+
