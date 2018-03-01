@@ -683,3 +683,74 @@
 	
 }
 
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	color: $lightgrey;
+	&__item {
+		display: flex;
+		flex: 1;
+		margin: 15px;
+
+	}
+	.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.top {
+			padding-bottom: 90px;
+			.fa-twitter, .fa-instagram, .fa-linkedin-in, .fa-facebook-f, .fa-youtube, .fa-google-plus-g, .fa-ellipsis-h {
+				background-color: $grey;
+				color: $white;
+				margin: 3px;
+				border-radius: 50%;
+				padding: 10px;
+				width: 35px;
+				height: 35px;
+
+				&:hover {
+					background-color: $twine;
+				}
+			}
+
+		}
+
+		.bottom {
+			padding-top: 90px;
+		}
+
+	}
+	.middle {
+		align-self: flex-start;
+		
+	}
+	.right {
+		background-color: $grey;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 45px;
+
+		p {
+			position: relative;
+			padding-bottom: 30px;
+			&:after {
+				content: "";
+				border-bottom: 3px solid $lightgrey;
+				position: absolute; 
+				bottom: 0;
+				left: -20%;
+				right: 0;
+				width: 140%;
+			}
+		}
+	}	
+
+
+}
