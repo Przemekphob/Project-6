@@ -572,7 +572,7 @@ p {
 }
 
 .premium__items .item-right__row p {
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 .premium__items .item-right__row img {
@@ -838,6 +838,97 @@ p {
   left: -20%;
   right: 0;
   width: 140%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navi__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .navi__wrapper .logo {
+    flex: 1;
+  }
+  .ourteambg .ourteam {
+    padding: 40px 0 80px 0;
+  }
+  .ourteambg .ourteam__workers {
+    display: flex;
+    flex-direction: column;
+  }
+  .logos__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logos__wrap img {
+    padding: 30px 80px;
+  }
+  .price {
+    display: flex;
+    padding: 40px 0;
+  }
+  .price__plans {
+    display: flex;
+    justify-content: space-around;
+  }
+  .price__plans .plan {
+    margin: 40px;
+  }
+  .premium {
+    padding: 40px 0;
+  }
+  .premium__items .item-left {
+    padding: 25px;
+  }
+  .facts {
+    padding: 25px;
+  }
+  .facts__numbers .num-item {
+    flex: 1;
+    padding: 40px 100px;
+  }
+  .lowgreybg .contactus {
+    padding: 40px 150px 60px 150px;
+  }
+  .footer {
+    padding: 30px 0;
+    color: #aeaeae;
+  }
+  .footer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer .left .top {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  .footer .left .top .fa-twitter, .footer .left .top .fa-instagram, .footer .left .top .fa-linkedin-in, .footer .left .top .fa-facebook-f, .footer .left .top .fa-youtube, .footer .left .top .fa-google-plus-g, .footer .left .top .fa-ellipsis-h {
+    margin: 4px 20px;
+  }
+  .footer .left .bottom {
+    padding-top: 40px;
+  }
+  .footer .right {
+    padding: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
