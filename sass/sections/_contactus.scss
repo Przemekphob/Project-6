@@ -1,0 +1,56 @@
+.lowgreybg {
+	border-top: 1px solid $lightgrey;
+	.contactus {
+		padding: 60px 300px 80px 300px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+		&__headtittle {
+			h4 {
+				color: $lightgrey;
+			}
+		}
+		&__form {
+			padding: 80px 0 20px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.double-form {
+				display: flex;
+				.inputsgrey {
+					flex: 1;
+					margin: 15px;
+				}
+			}
+			.inputsgrey {
+				margin: 15px 15px 40px 15px;		
+			}
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+	.lowgreybg {
+		.contactus {
+			padding: 40px 150px 60px 150px;
+		}
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+	.lowgreybg {
+		.contactus {
+			padding: 30px 100px 50px 100px;
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.lowgreybg {
+		.contactus {
+			padding: 25px 10px 40px 10px;
+		}
+	}
+}

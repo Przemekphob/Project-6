@@ -1,0 +1,77 @@
+.happyclients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 60px 0;
+	&__headtittle {
+		h4 {
+			color: $lightgrey;
+		}	
+	}
+	.carousel {
+		.carousel-inner {
+			.item {
+				padding: 50px;
+				div {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					text-align: center;
+					padding: 0 200px;
+					h2, h3, img, p {
+						padding: 10px;
+					}
+				}
+			}
+		}
+		.carousel-indicators {
+			position: absolute;
+			bottom: -35px;
+			li, .active {
+				margin: 5px;
+				border: 2px solid $twine;
+				background-color: $white;
+				width: 15px;
+				height: 15px;
+			}
+			.active {
+				background-color: $twine;
+			}
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+	.happyclients {
+		.carousel {
+			.carousel-inner {
+				.item {
+					div {
+						padding: 0 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.happyclients {
+		.carousel {
+			.carousel-inner {
+				.item {
+					div {
+						padding: 0 50px;
+					}
+				}
+			}
+		}
+	}
+}

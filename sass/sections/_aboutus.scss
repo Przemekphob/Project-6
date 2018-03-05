@@ -1,0 +1,94 @@
+.aboutus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	&__headtittle {
+		h4 {
+			color: $lightgrey;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 50px 0 90px 0;
+
+		.left-side {
+			text-align: left;
+			flex: 1.3;
+			p {
+				padding: 20px;
+				font-weight: $light;
+				font-size: $fontm;
+			}
+		}
+		.right-side {
+			flex: 1;
+
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.aboutus {
+		&__content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 40px 0 50px 0;
+
+			.left-side {
+				text-align: center;
+				align-items: center;
+				flex: 1;
+			}
+			.right-side {
+				flex: 1;
+
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+	.aboutus {
+		&__content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 40px 0 50px 0;
+
+			.left-side {
+				text-align: center;
+				align-items: center;
+				flex: 1;
+			}
+			.right-side {
+				flex: 1;
+				a {
+					img {
+						width: 100%;
+					}
+				}
+				#myModal {
+					max-width: 80%;
+
+				}
+
+			}
+		}
+	}
+}
+
